@@ -5,7 +5,6 @@ import com.zubarev.dataloader.entity.TestData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 
 @Service
 public class TestDataServiceImpl implements TestDataService {
@@ -18,8 +17,7 @@ public class TestDataServiceImpl implements TestDataService {
     }
 
     @Override
-    public List<TestData> findAll() {
-        return testDataRepository.findAll();
+    public void saveAll(Iterable<TestData> iterable) {
+         testDataRepository.saveAll(iterable);
     }
-
 }
