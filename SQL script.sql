@@ -1,7 +1,8 @@
 CREATE SCHEMA `test_task` DEFAULT CHARACTER SET utf8 ;
 
+DROP TABLE IF EXISTS `test_task`.`processed_data`;
 CREATE TABLE `test_task`.`processed_data` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL,
   `name` VARCHAR(45) NULL,
   `value` FLOAT NULL,
   PRIMARY KEY (`id`),
