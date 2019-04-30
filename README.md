@@ -10,4 +10,5 @@ ____
     -  user = root
     -  password = root
  3. Open command line in the project directory and enter 'mvn package'
+ 4. Place your csv. files in 'unprocessed' package.
  4. Enter in command line 'java -jar target/data-loader-0.0.1-SNAPSHOT.jar'
