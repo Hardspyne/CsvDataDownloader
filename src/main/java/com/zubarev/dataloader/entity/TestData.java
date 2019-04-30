@@ -12,10 +12,10 @@ public class TestData {
     private int id;
 
     @Column(name = "name")
-    private String firstName;
+    private String name;
 
     @Column(name = "value")
-    private String lastName;
+    private float value;
 
 
     public TestData() {
@@ -29,28 +29,28 @@ public class TestData {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public float getValue() {
+        return value;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setValue(float value) {
+        this.value = value;
     }
 
     @Override
     public String toString() {
         return "TestData{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", name='" + name + '\'' +
+                ", value=" + value +
                 '}';
     }
 }
